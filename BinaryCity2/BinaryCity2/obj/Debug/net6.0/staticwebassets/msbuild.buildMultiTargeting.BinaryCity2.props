@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\BinaryCity2.props" />
+</Project>
