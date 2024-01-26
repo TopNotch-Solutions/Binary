@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Creation</title>
+    <style>
+        body{
+    background-color: rgb(228, 228, 228);
+}
+        .logout-div{
+            width: 100%;
+            display: flex;
+            justify-content: end;
+            
+        }
+        .logout{
+            margin-right: 20px;
+            font-size:20px;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 10px;
+            padding: 10px 20px;
+            background-color: rgb(36, 36, 175);;
+        }
+        .login-container{
+            width: 50%;
+            height: 340px;
+            border: 2px solid green;
+            margin: 120px auto 0px ;
+            border-radius: 10px;
+        }
+        .header-container{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .header-container h1{
+            font-size: 40px;
+            color: green;
+        }
+        .login-container p{
+            color: red;
+            margin-top: -25px;
+            text-align: center;
+        }
+        .login-container form .div-separator,
+        button
+        {
+            margin-left: 20px;
+        }
+        .login-container form .button-div{
+            width: 100%;
+            /* background-color: red; */
+            
+        }
+        .login-container form .button-div a{
+            display: block;
+            text-decoration: none;
+            width: 94%;
+            margin: 0 auto;
+            padding: 20px 0px;
+            margin-top: 15px;
+            font-size: 23px;
+            text-align: center;
+            border: none;
+            border-radius: 15px;
+            background-color: green;
+            color: white;
+        }
+        .login-container form .div-separator{
+            margin-bottom:20px ;
+        }
+        .login-container form .div-separator:first-child{
+            margin-top:60px;
+        }
+           
+        
+        .login-container form .div-separator label{
+            display: block;
+            margin-top: 10px;
+            font-size: 20px;
+        }
+        .login-container form .div-separator input{
+            padding: 12px 5px;
+            width: 95%;
+            border: 1px solid rgb(71, 69, 69);
+            border-radius: 5px;
+        }
+        .login-container form button{
+            width: 94%;
+            padding: 20px 0px;
+            margin-top: 15px;
+            font-size: 23px;
+            text-align: center;
+            border: none;
+            border-radius: 15px;
+            background-color: green;
+            color: white;
+        }
+        .login-container form button:hover{
+            background-color: rgb(2, 159, 2);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="logout-div"><a href="clientList.html" class="logout">List</a><a href="clientIndex.html" class="logout">Logout</a></div>
+    <div class="login-container">
+       <div class="header-container"><h1>Client Creation</h1></div>
+        <p>required*</p>
+        <form>
+            <div class="div-separator">
+                <label>Name: *</label>
+                <input type="text" placeholder="Enter your name" />
+            </div>
+            
+            <div class="button-div"><a href="clientList.html" >Create</a></div>
+        </form>
+    </div>
+</body>
+</html>
